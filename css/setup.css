@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: "normal";
+}
+
+
+html {
+    height: 100%;
+    background-image: url(../img/fundinho.jpg);
+    background: #000000 ,9;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+.background-image {
+    filter: blur(50px);
+}
+
+p{
+float: left;
+margin-left: 10%;
+font-weight: bold;
+font-size: 30px;
+}
+
+.textbox {
+    height: 100%;
+    display: grid;
+    color: #ffffff;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+div {
+    margin-bottom: 5px;
+}
+
+.box {
+    align-content: center;
+    --border-size: 3px;
+    --border-angle: 0turn;
+    width: 60vmin;
+    height: 50vmin;
+    background-image: conic-gradient(
+        from var(--border-angle),
+ #000000, #000000
+    ),
+        
+    conic-gradient(
+        from var(--border-angle),
+#ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000, #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000, #ffff00
+        );
+    
+    background-size: calc(100% - (var(--border-size) * 2))
+        calc(100% - (var(--border-size) *2)),
+        cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    animation: bg-spin 5s linear infinite;}
+
+@keyframes bg-spin {
+    to {
+        --border-angle: -1turn;
+    }
+}
+
+@property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+}
+
+a {
+    color: #ffffff;
+}
+
+.esqueci {
+    float: right;
+    margin-right: 10%;
+}
+
+input[type=text], input[type=password] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 7px;
+  outline: none;
+
+}
+
+input:focus {
+   outline: 3px solid #ff0000;
+}
+
+button {
+  width: 80%;
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 8px ;
+  border: none;
+  cursor: pointer;
+    background: linear-gradient(90deg, #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000, #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000, #ffff00);
+    background-size: 300%;
+    border-radius: 7px;
+    animation: bordaanimada 30s Linear Infinite;
+
+}
+
+@keyframes bordaanimada {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: 600%;
+    }
+}
