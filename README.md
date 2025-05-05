@@ -46,5 +46,5 @@ Durante o processo, foram testados:
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/projeto-piloto-vercel.git
+git clone https://github.com/pfvlare/projeto-piloto-vercel.git
 cd projeto-piloto-vercel
