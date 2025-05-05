@@ -47,4 +47,3 @@ Durante o processo, foram testados:
 
 ```bash
 git clone https://github.com/pfvlare/relogio-vercel.git
-cd projeto-piloto-vercel
